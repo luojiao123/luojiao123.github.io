@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[添加本地搜索localSearch]]></title>
+      <url>/2017/11/30/localSearch/</url>
+      <content type="html"><![CDATA[<h1 id="添加hexo博客站点内容搜索"><a href="#添加hexo博客站点内容搜索" class="headerlink" title="添加hexo博客站点内容搜索"></a>添加hexo博客站点内容搜索</h1><h4 id="1-安装hexo-generator-searchdb，在站点的根目录（hexo初始化的文件夹）下执行以下命令："><a href="#1-安装hexo-generator-searchdb，在站点的根目录（hexo初始化的文件夹）下执行以下命令：" class="headerlink" title="1.安装hexo-generator-searchdb，在站点的根目录（hexo初始化的文件夹）下执行以下命令："></a>1.安装hexo-generator-searchdb，在站点的根目录（hexo初始化的文件夹）下执行以下命令：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+<h4 id="2-编辑站点配置文件，新增以下内容到任意位置"><a href="#2-编辑站点配置文件，新增以下内容到任意位置" class="headerlink" title="2.编辑站点配置文件，新增以下内容到任意位置"></a>2.编辑站点配置文件，新增以下内容到任意位置</h4><pre><code>search:
+    path: search.xml
+    field:post
+    format:html
+    limit:10000
+</code></pre><h4 id="3-编辑主题配置文件，启用本地搜索功能"><a href="#3-编辑主题配置文件，启用本地搜索功能" class="headerlink" title="3.编辑主题配置文件，启用本地搜索功能"></a>3.编辑主题配置文件，启用本地搜索功能</h4><pre><code>#Local search
+local_search:
+    enable:true
+</code></pre>]]></content>
+      
+        <categories>
+            
+            <category> hexo </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> hexo next localSearxh </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[favicon显示]]></title>
+      <url>/2017/11/30/favicon/</url>
+      <content type="html"><![CDATA[<h3 id="favicon制作："><a href="#favicon制作：" class="headerlink" title="favicon制作："></a>favicon制作：</h3><p><a href="http://www.bitbug.net" target="_blank" rel="noopener">http://www.bitbug.net</a>  比特虫在线制作</p>
+<h3 id="favicon显示："><a href="#favicon显示：" class="headerlink" title="favicon显示："></a>favicon显示：</h3><p>到next主题下打开_config.yml 文件找到favicon，将favicon文件放入目录hexo\themes\next\source\images中，然后进行如下配置即可</p>
+<p>favicon: </p>
+<p>  small: /images/favicon.ico</p>
+<p>  medium: /images/favicon.ico</p>
+]]></content>
+      
+        <categories>
+            
+            <category> hexo </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> hexo next </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[hexo博客搭建]]></title>
+      <url>/2017/11/29/firstBlog/</url>
+      <content type="html"><![CDATA[<p>首先你的电脑需要先安装好git及nodejs</p>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>1.进入git或cmd执行命令进行hexo安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure></p>
+<p>2.初始化，选择本地磁盘某个位置创建本地hexo文件夹，进入后右键 git bash here执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
+<p>3.生成静态页面执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure></p>
+<p>4.本地服务执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure></p>
+<p>若没有安装本地服务则使用命令进行安装：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-sever --save</span><br></pre></td></tr></table></figure></p>
+<p>服务开启成功会出现下面信息，可访问<a href="http://localhost:4000/，停止服务按Ctrl+C" target="_blank" rel="noopener">http://localhost:4000/，停止服务按Ctrl+C</a></p>
+<p> Hexo is running at <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>. Press Ctrl+C to stop.</p>
+<h3 id="配置github"><a href="#配置github" class="headerlink" title="配置github"></a>配置github</h3><p> 1.建立Repository<br> 建立与你github用户名对应的仓库，仓库名为【your_user_name.github.io】。<br> 2.创建ssh keys，找到id_rsa.pub复制好</p>
+<p> 检查是否存在ssh keys,到git bash终端输入命令：ls -al ~/.ssh，若存在就会出现id_rsa id_rsa.pub。</p>
+<p> 3.为刚刚创建的仓库添加ssh keys，到刚创建的仓库依次点击Setting &gt;&gt; Deply keys &gt;&gt; Add deply key，然后填写title和key</p>
+<p>title可以随便填写，Key里面填刚刚id_rsa.pub文件复制好的内容，然后点击Add key即可。</p>
+<p>4.测试连接</p>
+<p>执行命令：ssh -T git@github.com</p>
+<p>出现  You’ve successfully authenticated, but GitHub does not provide shell access.<br>就OK了</p>
+<p>5.配置站点文件_config.yml</p>
+<p>在你创建的hexo文件夹中找到_config.yml文件，打开拉到最下面，作如下修改：</p>
+<p>deploy:</p>
+<p>  type: git</p>
+<p>  repo: <a href="https://github.com/username/username.github.io.git" target="_blank" rel="noopener">https://github.com/username/username.github.io.git</a></p>
+<p>  branch: master</p>
+<p>  username填你自己的github用户名</p>
+<p>6.配置完成后回到git bash执行以下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g <span class="comment">#生成静态页面至public目录</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d <span class="comment">#将.deploy目录部署到github</span></span><br></pre></td></tr></table></figure>
+<p>执行完若报错 error：Deployer not found：github，则执行如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<p>然后再执行  hexo g，hexo d<br>执行成功最后会出现：INFO  Deploy done: git</p>
+<p>访问<a href="http://username.github.io" target="_blank" rel="noopener">http://username.github.io</a>  看到和你访问localhost:4000一样的页面就说明搭建好了。</p>
+<pre><code>版本：
+    node: 8.4.0
+    npm: 5.3.0
+    hexo: 3.4.2
+</code></pre>]]></content>
+      
+        <categories>
+            
+            <category> hexo </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>/2017/11/29/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+  
+  
+</search>
