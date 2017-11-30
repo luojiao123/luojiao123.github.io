@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="首先你的电脑需要先安装好git及nodejs 安装hexo1.进入git或cmd执行命令进行hexo安装1$ npm install -g hexo 2.初始化，选择本地磁盘某个位置创建本地hexo文件夹，进入后右键 git bash here执行命令：1$ hexo init 3.生成静态页面执行命令：1$ hexo">
+<meta name="description" content="执行命令 hexo d时报如下错误：could not read Username for ‘https://github.com‘: Invalid argument 解决方案：输入命令：1$ git config --global core.autocrlf false 然后执行：123$ hexo clean $">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo博客搭建">
-<meta property="og:url" content="http://yoursite.com/2017/11/29/firstBlog/index.html">
+<meta property="og:title" content="hexo d 报错">
+<meta property="og:url" content="http://yoursite.com/2017/11/30/hexo-d-报错/index.html">
 <meta property="og:site_name" content="卡尔丹琪">
-<meta property="og:description" content="首先你的电脑需要先安装好git及nodejs 安装hexo1.进入git或cmd执行命令进行hexo安装1$ npm install -g hexo 2.初始化，选择本地磁盘某个位置创建本地hexo文件夹，进入后右键 git bash here执行命令：1$ hexo init 3.生成静态页面执行命令：1$ hexo g 4.本地服务执行命令：1$ hexo s 若没有安装本地服务则使用命令进行">
+<meta property="og:description" content="执行命令 hexo d时报如下错误：could not read Username for ‘https://github.com‘: Invalid argument 解决方案：输入命令：1$ git config --global core.autocrlf false 然后执行：123$ hexo clean $ hexo g$ hexo d 若还是报错，就再执行一遍 hexo clean">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-30T08:21:50.360Z">
+<meta property="og:updated_time" content="2017-11-30T09:48:49.001Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo博客搭建">
-<meta name="twitter:description" content="首先你的电脑需要先安装好git及nodejs 安装hexo1.进入git或cmd执行命令进行hexo安装1$ npm install -g hexo 2.初始化，选择本地磁盘某个位置创建本地hexo文件夹，进入后右键 git bash here执行命令：1$ hexo init 3.生成静态页面执行命令：1$ hexo g 4.本地服务执行命令：1$ hexo s 若没有安装本地服务则使用命令进行">
+<meta name="twitter:title" content="hexo d 报错">
+<meta name="twitter:description" content="执行命令 hexo d时报如下错误：could not read Username for ‘https://github.com‘: Invalid argument 解决方案：输入命令：1$ git config --global core.autocrlf false 然后执行：123$ hexo clean $ hexo g$ hexo d 若还是报错，就再执行一遍 hexo clean">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/11/29/firstBlog/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/11/30/hexo-d-报错/"/>
 
 
 
 
 
-  <title>hexo博客搭建 | 卡尔丹琪</title>
+  <title>hexo d 报错 | 卡尔丹琪</title>
   
 
 
@@ -296,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/29/firstBlog/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/30/hexo-d-报错/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jluo">
@@ -313,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hexo博客搭建</h1>
+          <h1 class="post-title" itemprop="name headline">hexo d 报错</h1>
         
 
         <div class="post-meta">
@@ -325,8 +325,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-29T20:46:01+08:00">
-                2017-11-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-30T16:47:32+08:00">
+                2017-11-30
               </time>
             
 
@@ -335,28 +335,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -385,39 +363,11 @@
       
 
       
-        <p>首先你的电脑需要先安装好git及nodejs</p>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>1.进入git或cmd执行命令进行hexo安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure></p>
-<p>2.初始化，选择本地磁盘某个位置创建本地hexo文件夹，进入后右键 git bash here执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
-<p>3.生成静态页面执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure></p>
-<p>4.本地服务执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure></p>
-<p>若没有安装本地服务则使用命令进行安装：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-sever --save</span><br></pre></td></tr></table></figure></p>
-<p>服务开启成功会出现下面信息，可访问<a href="http://localhost:4000/，停止服务按Ctrl+C" target="_blank" rel="noopener">http://localhost:4000/，停止服务按Ctrl+C</a></p>
-<p> Hexo is running at <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>. Press Ctrl+C to stop.</p>
-<h3 id="配置github"><a href="#配置github" class="headerlink" title="配置github"></a>配置github</h3><p> 1.建立Repository<br> 建立与你github用户名对应的仓库，仓库名为【your_user_name.github.io】。<br> 2.创建ssh keys，找到id_rsa.pub复制好</p>
-<p> 检查是否存在ssh keys,到git bash终端输入命令：ls -al ~/.ssh，若存在就会出现id_rsa id_rsa.pub。</p>
-<p> 3.为刚刚创建的仓库添加ssh keys，到刚创建的仓库依次点击Setting &gt;&gt; Deply keys &gt;&gt; Add deply key，然后填写title和key</p>
-<p>title可以随便填写，Key里面填刚刚id_rsa.pub文件复制好的内容，然后点击Add key即可。</p>
-<p>4.测试连接</p>
-<p>执行命令：ssh -T git@github.com</p>
-<p>出现  You’ve successfully authenticated, but GitHub does not provide shell access.<br>就OK了</p>
-<p>5.配置站点文件_config.yml</p>
-<p>在你创建的hexo文件夹中找到_config.yml文件，打开拉到最下面，作如下修改：</p>
-<p>deploy:</p>
-<p>  type: git</p>
-<p>  repo: <a href="https://github.com/username/username.github.io.git" target="_blank" rel="noopener">https://github.com/username/username.github.io.git</a></p>
-<p>  branch: master</p>
-<p>  username填你自己的github用户名</p>
-<p>6.配置完成后回到git bash执行以下命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g <span class="comment">#生成静态页面至public目录</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d <span class="comment">#将.deploy目录部署到github</span></span><br></pre></td></tr></table></figure>
-<p>执行完若报错 error：Deployer not found：github，则执行如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
-<p>然后再执行  hexo g，hexo d<br>执行成功最后会出现：INFO  Deploy done: git</p>
-<p>访问<a href="http://username.github.io" target="_blank" rel="noopener">http://username.github.io</a>  看到和你访问localhost:4000一样的页面就说明搭建好了。</p>
-<pre><code>版本：
-    node: 8.4.0
-    npm: 5.3.0
-    hexo: 3.4.2
-</code></pre>
+        <h3 id="执行命令-hexo-d时报如下错误："><a href="#执行命令-hexo-d时报如下错误：" class="headerlink" title="执行命令 hexo d时报如下错误："></a>执行命令 hexo d时报如下错误：</h3><p>could not read Username for ‘<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a>‘: Invalid argument</p>
+<h3 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><p>输入命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global core.autocrlf <span class="literal">false</span></span><br></pre></td></tr></table></figure></p>
+<p>然后执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean </span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p>
+<p>若还是报错，就再执行一遍 hexo clean ，hexo g，hexo d</p>
+
       
     </div>
     
@@ -441,8 +391,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/11/29/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2017/11/30/localSearch/" rel="next" title="添加本地搜索localSearch">
+                <i class="fa fa-chevron-left"></i> 添加本地搜索localSearch
               </a>
             
           </div>
@@ -450,10 +400,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/11/30/favicon/" rel="prev" title="favicon显示">
-                favicon显示 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -591,7 +537,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo"><span class="nav-number">1.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置github"><span class="nav-number">2.</span> <span class="nav-text">配置github</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#执行命令-hexo-d时报如下错误："><span class="nav-number">1.</span> <span class="nav-text">执行命令 hexo d时报如下错误：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决方案："><span class="nav-number">2.</span> <span class="nav-text">解决方案：</span></a></li></ol></div>
             
 
           </div>

@@ -3,15 +3,29 @@
   
     
     <entry>
+      <title><![CDATA[hexo d 报错]]></title>
+      <url>/2017/11/30/hexo-d-%E6%8A%A5%E9%94%99/</url>
+      <content type="html"><![CDATA[<h3 id="执行命令-hexo-d时报如下错误："><a href="#执行命令-hexo-d时报如下错误：" class="headerlink" title="执行命令 hexo d时报如下错误："></a>执行命令 hexo d时报如下错误：</h3><p>could not read Username for ‘<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a>‘: Invalid argument</p>
+<h3 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><p>输入命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global core.autocrlf <span class="literal">false</span></span><br></pre></td></tr></table></figure></p>
+<p>然后执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean </span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p>
+<p>若还是报错，就再执行一遍 hexo clean ，hexo g，hexo d</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[添加本地搜索localSearch]]></title>
       <url>/2017/11/30/localSearch/</url>
-      <content type="html"><![CDATA[<h1 id="添加hexo博客站点内容搜索"><a href="#添加hexo博客站点内容搜索" class="headerlink" title="添加hexo博客站点内容搜索"></a>添加hexo博客站点内容搜索</h1><h4 id="1-安装hexo-generator-searchdb，在站点的根目录（hexo初始化的文件夹）下执行以下命令："><a href="#1-安装hexo-generator-searchdb，在站点的根目录（hexo初始化的文件夹）下执行以下命令：" class="headerlink" title="1.安装hexo-generator-searchdb，在站点的根目录（hexo初始化的文件夹）下执行以下命令："></a>1.安装hexo-generator-searchdb，在站点的根目录（hexo初始化的文件夹）下执行以下命令：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
-<h4 id="2-编辑站点配置文件，新增以下内容到任意位置"><a href="#2-编辑站点配置文件，新增以下内容到任意位置" class="headerlink" title="2.编辑站点配置文件，新增以下内容到任意位置"></a>2.编辑站点配置文件，新增以下内容到任意位置</h4><pre><code>search:
+      <content type="html"><![CDATA[<h3 id="添加hexo博客站点内容搜索"><a href="#添加hexo博客站点内容搜索" class="headerlink" title="添加hexo博客站点内容搜索"></a>添加hexo博客站点内容搜索</h3><p>1.安装hexo-generator-searchdb，在站点的根目录（hexo初始化的文件夹）下执行以下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure></p>
+<p>2.编辑站点配置文件，新增以下内容到任意位置</p>
+<pre><code>search:
     path: search.xml
     field:post
     format:html
     limit:10000
-</code></pre><h4 id="3-编辑主题配置文件，启用本地搜索功能"><a href="#3-编辑主题配置文件，启用本地搜索功能" class="headerlink" title="3.编辑主题配置文件，启用本地搜索功能"></a>3.编辑主题配置文件，启用本地搜索功能</h4><pre><code>#Local search
+</code></pre><p>3.编辑主题配置文件，启用本地搜索功能</p>
+<pre><code>#Local search
 local_search:
     enable:true
 </code></pre>]]></content>
