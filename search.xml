@@ -3,6 +3,41 @@
   
     
     <entry>
+      <title><![CDATA[hexo常用命令]]></title>
+      <url>/2017/12/01/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+      <content type="html"><![CDATA[<h1 id="hexo常用操作"><a href="#hexo常用操作" class="headerlink" title="hexo常用操作"></a>hexo常用操作</h1><pre><code>$ hexo new &quot;博文名字&quot;    #新建博文
+
+$ hexo clean   #清除public目录
+
+$ hexo g   #生成静态页面至public目录
+
+$ hexo d  #将.deploy目录部署到GitHub
+
+$ hexo s  #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）
+
+更新hexo：$ npm update -g hexo
+
+更新主题：cd 到主题文件夹，执行命令：$ git pull
+
+更新插件：$ npm update
+</code></pre>]]></content>
+      
+        <categories>
+            
+            <category> hexo </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[hexo d 报错]]></title>
       <url>/2017/11/30/hexo-d-%E6%8A%A5%E9%94%99/</url>
       <content type="html"><![CDATA[<h3 id="执行命令-hexo-d时报如下错误："><a href="#执行命令-hexo-d时报如下错误：" class="headerlink" title="执行命令 hexo d时报如下错误："></a>执行命令 hexo d时报如下错误：</h3><p>could not read Username for ‘<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a>‘: Invalid argument</p>
@@ -11,6 +46,18 @@
 <p>若还是报错，就再执行一遍 hexo clean ，hexo g，hexo d</p>
 ]]></content>
       
+        <categories>
+            
+            <category> hexo </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
         
     </entry>
     
@@ -39,14 +86,18 @@ local_search:
         
         <tags>
             
-            <tag> hexo next localSearxh </tag>
+            <tag> hexo </tag>
+            
+            <tag> next </tag>
+            
+            <tag> localSearxh </tag>
             
         </tags>
         
     </entry>
     
     <entry>
-      <title><![CDATA[favicon显示]]></title>
+      <title><![CDATA[hexo的NexT主题的favicon显示]]></title>
       <url>/2017/11/30/favicon/</url>
       <content type="html"><![CDATA[<h3 id="favicon制作："><a href="#favicon制作：" class="headerlink" title="favicon制作："></a>favicon制作：</h3><p><a href="http://www.bitbug.net" target="_blank" rel="noopener">http://www.bitbug.net</a>  比特虫在线制作</p>
 <h3 id="favicon显示："><a href="#favicon显示：" class="headerlink" title="favicon显示："></a>favicon显示：</h3><p>到next主题下打开_config.yml 文件找到favicon，将favicon文件放入目录hexo\themes\next\source\images中，然后进行如下配置即可</p>
@@ -64,7 +115,9 @@ local_search:
         
         <tags>
             
-            <tag> hexo next </tag>
+            <tag> hexo </tag>
+            
+            <tag> NexT </tag>
             
         </tags>
         
