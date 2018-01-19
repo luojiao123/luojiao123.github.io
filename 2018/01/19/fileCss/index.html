@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="卡尔丹琪">
 <meta property="og:description" content="bootstrap 更改input[type=file]的样式 html123456789&amp;lt;div&amp;gt;    &amp;lt;input type=&amp;quot;file&amp;quot; name=&amp;quot;file&amp;quot; id=&amp;quot;file&amp;quot; class=&amp;quot;hide&amp;quot; /&amp;gt;    &amp;lt;div class=&amp;quot;input-group in">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-19T08:19:12.025Z">
+<meta property="og:updated_time" content="2018-01-19T08:25:51.062Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="bootstrap中更改input[type=file]的样式">
 <meta name="twitter:description" content="bootstrap 更改input[type=file]的样式 html123456789&amp;lt;div&amp;gt;    &amp;lt;input type=&amp;quot;file&amp;quot; name=&amp;quot;file&amp;quot; id=&amp;quot;file&amp;quot; class=&amp;quot;hide&amp;quot; /&amp;gt;    &amp;lt;div class=&amp;quot;input-group in">
@@ -389,6 +389,9 @@
         <h3 id="bootstrap-更改input-type-file-的样式"><a href="#bootstrap-更改input-type-file-的样式" class="headerlink" title="bootstrap 更改input[type=file]的样式"></a>bootstrap 更改input[type=file]的样式</h3><blockquote>
 <p>html<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &lt;input type=&quot;file&quot; name=&quot;file&quot; id=&quot;file&quot; class=&quot;hide&quot; /&gt;</span><br><span class="line">    &lt;div class=&quot;input-group input-group-sm&quot;&gt;</span><br><span class="line">      &lt;input type=&quot;text&quot; id=&quot;photoCover3&quot; class=&quot;form-control&quot; placeholder=&quot;请点击浏览......&quot;&gt;</span><br><span class="line">      &lt;span class=&quot;input-group-btn&quot;&gt;</span><br><span class="line">        &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; onclick=&quot;$(&apos;input[type=file]&apos;).click();&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt; 浏览&lt;/button&gt;</span><br><span class="line">      &lt;/span&gt;</span><br><span class="line">    &lt;/div&gt;&lt;!-- /input-group --&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
 <p>js<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 将上传文件的名称显示在文本框内</span><br><span class="line">$(&apos;input[id=file]&apos;).change(function() &#123;   </span><br><span class="line">	$(&apos;#photoCover3&apos;).val($(this).val());  </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>如果没有使用bootstrap，也可以使用此方法，样式自己设置即可。</li>
+</ul>
 </blockquote>
 
       
